@@ -15,6 +15,7 @@
         <h2>1. Color changer</h2>
         <button id="gray_button">Gray</button>
         <button id="blue_button">Blue</button>
+        <button id="pink_button">Pink</button>
         <div id="color_box" class="gray"></div>        
         <script>
             const color_box = document.getElementById("color_box");
@@ -27,6 +28,11 @@
             const blue_button = document.getElementById("blue_button");
             blue_button.onclick = function () {
                 color_box.className = "blue";
+            };
+            
+            const pink_button = document.getElementById("pink_button");
+            pink_button.onclick = function () {
+                color_box.className = "pink";
             };
 
             /* TODO 1
