@@ -35,11 +35,6 @@
                 color_box.className = "pink";
             };
 
-            /* TODO 1
-             *
-             * Add a third button (and the associated event handler)
-             * to support an additional color: pink
-             */
         </script>
 
         <hr>
@@ -53,13 +48,8 @@
             
             const counter_button = document.getElementById("counter_button");
             counter_button.onclick = function() {
-                /* TODO 2
-                 *
-                 * Fill in this function so that it increments
-                 * (adds one to) the variable named count,
-                 * then updates the text content of "countspan"
-                 * to show the current value of "count".
-                 */
+                ++count
+                document.getElementById("countspan").innerHTML = count
             }
         </script>
 
