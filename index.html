@@ -8,6 +8,9 @@
             .blue { background: rgb(67, 111, 255); }
             .pink { background: pink; }
         </style>
+        <link rel = "stylesheet"
+            type = "text/css"
+            href = "style.css" >
     </head>
     <body>
         <h1>An interactive web page</h1>
@@ -69,5 +72,42 @@
                 alert("I have absolutely decided that the count is: " + ourdecision)
                 }
         </script>
+
+        <!-- Below is navigation and comments added after the fact.  Last edit 8/2/2019-->
+<!-- Note to self:  add the following html code to the header on new pages:
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "style.css" >
+
+   And then make sure to copy over the style.css sheet.  ;-)
+   -->
+<hr>
+<hr>
+<!-- Below is sidebar nav adapted from https://www.w3schools.com/howto/howto_js_off-canvas.asp-->
+<div id="mySidenav" class="sidenav">
+<p>Current: Everyone starts with a Hello World page!</p>
+  <p>Next: My first interactive web page.</p>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://Janell.gitlab.io/s_click-handlers">Next Projext</a>
+  <br>
+</div>
+
+<!-- Use button to open the sidenav -->
+
+<button onclick="openNav()">More Info</button>
+
+<script>
+/* Set the width of the side navigation to 250px  */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
     </body>
 </html>
