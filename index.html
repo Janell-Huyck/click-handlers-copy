@@ -3,7 +3,7 @@
     <head>
         <title>An interactive web page</title>
         <style>
-            #color_box { width: 200px; height: 200px; }
+            #color_box { width: 150px; height: 150px; }
             .gray { background: gray; }
             .blue { background: rgb(67, 111, 255); }
             .pink { background: pink; }
@@ -14,7 +14,6 @@
     </head>
     <body>
         <h1>An interactive web page</h1>
-
         <h2>1. Color changer</h2>
         <button id="gray_button">Gray</button>
         <button id="blue_button">Blue</button>
@@ -39,9 +38,7 @@
             };
 
         </script>
-
         <hr>
-
         <h2>2. Counter</h2>
         <button id="counter_button">This fabulous button</button>
         has been clicked <span id="countspan">0</span> times.
@@ -55,9 +52,7 @@
                 document.getElementById("countspan").innerHTML = count
             };
         </script>
-
         <hr>
-
         <h2>3. Even or Odd?</h2>
         <button id="even_or_odd_button">Is the count even or odd?</button>
         <script>
